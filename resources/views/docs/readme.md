@@ -1,0 +1,1 @@
+This is the documentation folder for the example site, feel free to delete it in live projects
