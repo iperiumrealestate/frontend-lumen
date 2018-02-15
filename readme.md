@@ -7,12 +7,32 @@ Documentation for Guzzle can be found here http://guzzle.readthedocs.io/en/stabl
 
 
 ## Installation
-Clone this repository, then run composer-update to pull in the dependencies
+
+1) Clone this repository, cd into the project folder, 
+2) then run composer-update to pull in the dependencies 
+3) and finally ./run to start the PHP server
+
 ```
 git clone https://github.com/iperiumrealestate/frontend-lumen.git
 
+cd frontend-lumen
+
 composer update --ignore-platform-reqs
+
+./run
 ```
+
+Once installed and running the documentation is viewable at http://localhost:8000/docs
+
+You can see the routes in the resources/routes/web.php file, most of the interesting ones are in 
+resources/routes/examples/properties.php
+
+The properties routes are:
+Property lists - http://localhost:8000/sales
+
+Example content pages:
+http://localhost:8000/en
+http://localhost:8000/en/about-us
 
 
 ## License
