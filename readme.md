@@ -9,13 +9,16 @@ Documentation for Guzzle can be found here http://guzzle.readthedocs.io/en/stabl
 ## Installation
 
 1) Clone this repository, cd into the project folder, 
-2) then run composer-update to pull in the dependencies 
-3) and finally ./run to start the PHP server
+2) Copy the .env.example file to .env
+3) Run composer-update to pull in the dependencies 
+4) Finally ./run to start the PHP server
 
 ```
 git clone https://github.com/iperiumrealestate/frontend-lumen.git
 
 cd frontend-lumen
+
+cp .env.example .env
 
 composer update --ignore-platform-reqs
 
