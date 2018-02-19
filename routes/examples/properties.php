@@ -3,7 +3,7 @@
 /**
  *
  */
-$app->get('/sales/{id:[0-9]+}', function($id) use ($app) {
+$app->get('/{lang:[a-z]{2}}/sales/{id:[0-9]+}', function($id) use ($app) {
 
     try {
 
@@ -35,7 +35,7 @@ $app->get('/sales/{id:[0-9]+}', function($id) use ($app) {
 /**
  * Returns a list of sales property previews
  */
-$app->get('/sales', function() use ($app) {
+$app->get('/{lang:[a-z]{2}}/sales', function() use ($app) {
 
     try {
 

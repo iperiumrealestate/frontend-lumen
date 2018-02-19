@@ -3,7 +3,9 @@
 /**
  * Returns a selection of blog post previews
  */
-$app->get('/blog', function($slug) use ($app) {
+$app->get('/{lang:[a-z]{2}}/news', function($slug) use ($app) {
+
+    die("Show news articles here");
 
 });
 

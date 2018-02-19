@@ -18,6 +18,12 @@ include(base_path('routes/examples/routes.php'));
 
 
 /**
+ * Content routes
+ *
+ */
+include(base_path('routes/examples/content.php'));
+
+/**
  * Properties routes
  *
  */
