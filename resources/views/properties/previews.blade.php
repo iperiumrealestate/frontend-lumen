@@ -27,7 +27,7 @@
         </div>
         <div class="row">
             <div class="col-xs-12">
-                <a class="pull-right btn btn-default btn-lg" href="/sales/{{ $property->id }}">View details</a>
+                <a class="pull-right btn btn-default btn-lg" href="/en/sales/{{ $property->id }}">View details</a>
             </div>
         </div>
     </div>
