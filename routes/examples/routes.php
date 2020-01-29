@@ -3,17 +3,17 @@
  * Example routes, feel free to use or remove these in your live projects
  *
  */
-$app->group(['prefix'=>'/examples'], function() use ($app) {
+$router->group(['prefix'=>'/examples'], function() use ($router) {
 
-   $app->get('/blog', function () use ($app) {
+   $router->get('/blog', function () use ($router) {
       // include(base_path('routes/examples/blog.php'));
    });
 
-   $app->get('/content', function () use ($app) {
+   $router->get('/content', function () use ($router) {
       include(base_path('routes/examples/content.php'));
    });
 
-   $app->get('/properties', function () use ($app) {
+   $router->get('/properties', function () use ($router) {
       include(base_path('routes/examples/properties.php'));
    });
 

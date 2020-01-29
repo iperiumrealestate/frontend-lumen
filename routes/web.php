@@ -37,7 +37,7 @@ include(base_path('routes/examples/properties.php'));
  * a 404 response will be returned, you'll need to check for this
  * and set the appropriate response headers
  */
-$app->get('/{slug:[a-zA-Z0-9\.\-\_\/]*}', function($slug=null) use ($app) {
+$router->get('/{slug:[a-zA-Z0-9\.\-\_\/]*}', function($slug=null) use ($router) {
 
    try {
 

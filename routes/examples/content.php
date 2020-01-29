@@ -3,7 +3,7 @@
 /**
  * Returns a selection of blog post previews
  */
-$app->get('/{lang:[a-z]{2}}/news', function($slug) use ($app) {
+$router->get('/{lang:[a-z]{2}}/news', function($slug) use ($router) {
 
     die("Show news articles here");
 
@@ -14,7 +14,7 @@ $app->get('/{lang:[a-z]{2}}/news', function($slug) use ($app) {
  * as you'll be requesting this frequently you'll probably want to 
  * cache it to improve performance 
  */
-$app->get('/navs', function($slug) use ($app) {
+$router->get('/navs', function($slug) use ($router) {
 
 });
 

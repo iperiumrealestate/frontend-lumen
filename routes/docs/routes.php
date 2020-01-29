@@ -4,9 +4,9 @@
  *
  */
 
-$app->group(['prefix'=>'/docs'], function() use ($app) {
+$router->group(['prefix'=>'/docs'], function() use ($router) {
 
-   $app->get('/', function () use ($app) {
+   $router->get('/', function () use ($router) {
       return view('docs/introduction');
    });
 

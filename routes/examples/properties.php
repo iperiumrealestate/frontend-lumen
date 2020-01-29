@@ -3,7 +3,7 @@
 /**
  *
  */
-$app->get('/{lang:[a-z]{2}}/sales/{id:[0-9]+}', function($id) use ($app) {
+$router->get('/{lang:[a-z]{2}}/sales/{id:[0-9]+}', function($id) use ($router) {
 
     try {
 
@@ -21,7 +21,7 @@ $app->get('/{lang:[a-z]{2}}/sales/{id:[0-9]+}', function($id) use ($app) {
        # render the view and return the response 
        return view("properties/details", [
           'property' => $details,
-          # add anything else you want to appear on the page here
+          # add anything else you want to routerear on the page here
        ]);
       
     } catch (GuzzleHttp\Exception\GuzzleException $e) {
@@ -35,7 +35,7 @@ $app->get('/{lang:[a-z]{2}}/sales/{id:[0-9]+}', function($id) use ($app) {
 /**
  * Returns a list of sales property previews
  */
-$app->get('/{lang:[a-z]{2}}/sales', function() use ($app) {
+$router->get('/{lang:[a-z]{2}}/sales', function() use ($router) {
 
     try {
 
@@ -53,7 +53,7 @@ $app->get('/{lang:[a-z]{2}}/sales', function() use ($app) {
        # render the view and return the response 
        return view("properties/previews", [
           'previews' => $previews,
-          # add anything else you want to appear on the page here
+          # add anything else you want to routerear on the page here
        ]);
       
     } catch (GuzzleHttp\Exception\GuzzleException $e) {
@@ -67,7 +67,7 @@ $app->get('/{lang:[a-z]{2}}/sales', function() use ($app) {
 /**
  * Returns a list of rental property previews
  */
-$app->get('/rentals', function($slug) use ($app) {
+$router->get('/rentals', function($slug) use ($router) {
 
 });
 
