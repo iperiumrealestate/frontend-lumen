@@ -4,6 +4,7 @@
 
 Documentation for Lumen can be found here https://lumen.laravel.com/docs/5.4
 Documentation for Guzzle can be found here http://guzzle.readthedocs.io/en/stable
+Once installed check http://localhost:8000/docs for more specific information
 
 
 ## Installation
@@ -36,6 +37,8 @@ Property lists - http://localhost:8000/sales
 Example content pages:
 http://localhost:8000/en
 http://localhost:8000/en/about-us
+
+
 
 
 ## License
