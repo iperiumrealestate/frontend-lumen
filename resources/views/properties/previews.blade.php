@@ -15,7 +15,7 @@
     <div class="col-xs-12 property property-preview">
         <div class="row">
             <div class="col-xs-12 col-sm-4 col-md-6">
-                <a href="/sales/{{ $property->id }}">
+                <a href="/en/sales/{{ $property->id }}">
                     <img class="img-responsive" src="{{ $property->photo_url }}" />
                 </a>
             </div>

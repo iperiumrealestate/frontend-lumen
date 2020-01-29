@@ -1,14 +1,14 @@
 @extends('content/layout')
 
 @section('head')
-<title>{{ $page->title or null }}</title>
+<title>{{ $page->title ?? null }}</title>
 <!-- Open Graph -->
 <!-- META tags -->
 <!-- Style -->
 @stop
 
 @section('body')
-{!! $page->content !!}
+{!! $page->content ?? null !!}
 @stop
 
 @section('script')
