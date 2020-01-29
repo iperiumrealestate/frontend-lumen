@@ -1,21 +1,43 @@
-# Lumen PHP Framework
+# Lumen frontend API website example  
 
-[![Build Status](https://travis-ci.org/laravel/lumen-framework.svg)](https://travis-ci.org/laravel/lumen-framework)
-[![Total Downloads](https://poser.pugx.org/laravel/lumen-framework/d/total.svg)](https://packagist.org/packages/laravel/lumen-framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/lumen-framework/v/stable.svg)](https://packagist.org/packages/laravel/lumen-framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/lumen-framework/v/unstable.svg)](https://packagist.org/packages/laravel/lumen-framework)
-[![License](https://poser.pugx.org/laravel/lumen-framework/license.svg)](https://packagist.org/packages/laravel/lumen-framework)
+## Documentation
 
-Laravel Lumen is a stunningly fast PHP micro-framework for building web applications with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Lumen attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as routing, database abstraction, queueing, and caching.
+Documentation for Lumen can be found here https://lumen.laravel.com/docs/5.4
+Documentation for Guzzle can be found here http://guzzle.readthedocs.io/en/stable
 
-## Official Documentation
 
-Documentation for the framework can be found on the [Lumen website](https://lumen.laravel.com/docs).
+## Installation
 
-## Security Vulnerabilities
+1) Clone this repository, cd into the project folder, 
+2) Copy the .env.example file to .env
+3) Run composer-update to pull in the dependencies 
+4) Finally ./run to start the PHP server
 
-If you discover a security vulnerability within Lumen, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+```
+git clone https://github.com/iperiumrealestate/frontend-lumen.git
+
+cd frontend-lumen
+
+cp .env.example .env
+
+composer update --ignore-platform-reqs
+
+./run
+```
+
+Once installed and running the documentation is viewable at http://localhost:8000/docs
+
+You can see the routes in the resources/routes/web.php file, most of the interesting ones are in 
+resources/routes/examples/properties.php
+
+The properties routes are:
+Property lists - http://localhost:8000/sales
+
+Example content pages:
+http://localhost:8000/en
+http://localhost:8000/en/about-us
+
 
 ## License
 
-The Lumen framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+This is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
